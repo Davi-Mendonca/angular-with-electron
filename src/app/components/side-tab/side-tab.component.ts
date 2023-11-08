@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./side-tab.component.scss']
 })
 export class SideTabComponent {
+  tab = document.querySelector('.my-tab');
 
+  tab.addEventListener('click', (event: any) => {
+      tab.classList.toggle('active')
+  })
 }
